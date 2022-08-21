@@ -1,0 +1,43 @@
+.first-part {
+    background-color: rgb(65, 58, 58);
+}
+
+.header-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    color: red;
+}
+
+.header-title h1 {
+    font-family: 'Berkshire Swash', cursive;
+    color: #FF5E19;
+    font-size: 380%;
+}
+
+.header-title p {
+    color: white;
+    font-size: 100%;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#img-1 {
+    width: 300px;
+}
