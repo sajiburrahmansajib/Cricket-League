@@ -41,3 +41,58 @@ img {
 #img-1 {
     width: 300px;
 }
+
+.main-part {
+    padding-top: 100px;
+}
+
+.player-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+
+}
+
+.player {
+    background-color: lightsalmon;
+}
+
+.player-details {
+    display: flex;
+
+}
+
+.plyer-images {
+    width: 100%;
+}
+
+.plyer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.plyer-text button {
+    width: 60%;
+    font-size: xx-large;
+    background-color: green;
+    color: white;
+}
+
+.info {
+    padding-right: 30px;
+}
+
+/* Footer part */
+
+.last-part {
+    background-color: rgb(49, 45, 45);
+    color: white;
+    text-align: center;
+    padding: 80px;
+    margin-top: 50px;
+}
