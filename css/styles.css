@@ -24,7 +24,8 @@
 .header-title h1 {
     font-family: 'Berkshire Swash', cursive;
     color: #FF5E19;
-    font-size: 380%;
+    font-size: 370%;
+
 }
 
 .header-title p {
@@ -46,11 +47,59 @@ img {
     padding-top: 100px;
 }
 
-.player-list {
+.player-list1 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 30px;
-    row-gap: 30px;
+    margin-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.player-list2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 20px;
+    margin-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.middle-row-player {
+    height: 60%;
+}
+
+.budget-list {
+    background-color: rgb(66, 58, 58);
+    color: white;
+    text-align: center;
+    display: grid;
+    grid-row: 1/3;
+    grid-column: 4/5;
+    padding: 40px;
+    height: 65%;
+
+
+}
+
+.budget-list h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.selected-players {
+    background-color: black;
+    color: white;
+}
+
+.selected-players h1 {
+    text-align: center;
+}
+
+.selected-players h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
@@ -84,7 +133,37 @@ img {
 }
 
 .info {
-    padding-right: 30px;
+    padding-right: 10px;
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type='text'] {
+    background-color: #3D4153;
+    padding: 10px 0px;
+    color: #ffffff;
+    width: 30%;
+    margin: 0 auto;
+    border: 2px solid #858299;
+    height: 10px;
+    padding: 10px;
+}
+
+.btn-calculate {
+    background-color: blue;
+    color: white;
+    font-size: larger;
+    border-radius: 5px;
+
+
+}
+
+.money {
+    margin-left: 5px;
 }
 
 /* Footer part */
