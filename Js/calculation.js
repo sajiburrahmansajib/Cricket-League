@@ -108,20 +108,17 @@ document.getElementById('btn-player12').addEventListener('click', function () {
     }
 });
 document.getElementById('btn-calculation').addEventListener('click', function () {
-    const perPayerCost = getInputElementById('playerCost');
+    const perPlayerCost = getInputElementById('playerCost');
     // const liCouunt = document.getElementById('selected-players');
     let countPlayer = document.getElementById("selected-players").children.length;
     const expenceElement = document.getElementById('p-Expenses');
-    const totalExpenses = perPayerCost * countPlayer;
-    console.log(typeof totalExpenses, totalExpenses)
+    const totalExpenses = perPlayerCost * countPlayer;
+    console.log(typeof perPlayerCost, perPlayerCost)
     expenceElement.innerText = totalExpenses;
 
 
 });
-function playerNumberCheck() {
-    let countPlayer = document.getElementById("selected-players").children.length;
-    return countPlayer;
-}
+
 document.getElementById('btn-totalCalculation').addEventListener('click', function () {
     const managerPrice = getInputElementById('managerCost');
     const coachPrice = getInputElementById('coachCost');
@@ -133,19 +130,6 @@ document.getElementById('btn-totalCalculation').addEventListener('click', functi
 
 });
 
-function getInputElementById(price) {
-    const inputElement = document.getElementById(price);
-    const inputElementString = inputElement.value;
-    const inputElementInt = parseInt(inputElementString);
-    console.log(inputElementInt);
-    return inputElementInt;
-};
-function getExpensesTotal(expenses) {
-    const expenceElement = document.getElementById(expenses);
-    const expenceElementString = expenceElement.innerText;
-    const expenceElementInt = parseInt(expenceElementString);
-    return expenceElementInt;
-};
 
 
 

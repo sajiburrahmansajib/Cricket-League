@@ -8,3 +8,27 @@ function setPlayerNameById(selectedPlayer, playerName, btn) {
     document.getElementById(btn).style.backgroundColor = '#A2A9AF';
 
 };
+function getInputElementById(price) {
+    const inputElement = document.getElementById(price);
+    const inputElementString = inputElement.value;
+    const inputElementInt = parseInt(inputElementString);
+    console.log(inputElementInt);
+
+    if (isNaN(inputElementInt) == true) {
+        alert('You can only put number');
+        return 0;
+    }
+    else {
+        return inputElementInt;
+    }
+};
+function getExpensesTotal(expenses) {
+    const expenceElement = document.getElementById(expenses);
+    const expenceElementString = expenceElement.innerText;
+    const expenceElementInt = parseInt(expenceElementString);
+    return expenceElementInt;
+};
+function playerNumberCheck() {
+    let countPlayer = document.getElementById("selected-players").children.length;
+    return countPlayer;
+};
