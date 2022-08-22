@@ -50,9 +50,6 @@ document.getElementById('btn-calculation').addEventListener('click', function ()
     // const liCouunt = document.getElementById('selected-players');
     let countPlayer = document.getElementById("selected-players").children.length;
     const expenceElement = document.getElementById('p-Expenses');
-    const expenceElementString = expenceElement.innerText;
-    const expenceElementInt = parseInt(expenceElementString);
-    // console.log(typeof expenceElementInt, expenceElementInt);
     const totalExpenses = perPayerCost * countPlayer;
     console.log(typeof totalExpenses, totalExpenses)
     expenceElement.innerText = totalExpenses;
@@ -62,6 +59,11 @@ document.getElementById('btn-calculation').addEventListener('click', function ()
 document.getElementById('btn-totalCalculation').addEventListener('click', function () {
     const managerPrice = getInputElementById('managerCost');
     const coachPrice = getInputElementById('coachCost');
+    const totalExpenses = getExpensesTotal('p-Expenses');
+    const total = managerPrice + coachPrice + totalExpenses;
+    const totalElement = document.getElementById('total');
+    totalElement.innerText = total;
+
 
 });
 
@@ -71,6 +73,12 @@ function getInputElementById(price) {
     const inputElementInt = parseInt(inputElementString);
     console.log(inputElementInt);
     return inputElementInt;
+};
+function getExpensesTotal(expenses) {
+    const expenceElement = document.getElementById(expenses);
+    const expenceElementString = expenceElement.innerText;
+    const expenceElementInt = parseInt(expenceElementString);
+    return expenceElementInt;
 };
 
 
