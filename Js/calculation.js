@@ -1,7 +1,5 @@
 document.getElementById('btn-player1').addEventListener('click', function () {
     setPlayerNameById('selected-players', 'player-name1', 'btn-player1')
-
-
 });
 document.getElementById('btn-player2').addEventListener('click', function () {
     setPlayerNameById('selected-players', 'player-name2', 'btn-player2')
@@ -47,15 +45,36 @@ document.getElementById('btn-player12').addEventListener('click', function () {
     setPlayerNameById('selected-players', 'player-name12', 'btn-player12')
 
 });
+document.getElementById('btn-calculation').addEventListener('click', function () {
+    const perPayerCost = getInputElementById('playerCost');
+    // const liCouunt = document.getElementById('selected-players');
+    let countPlayer = document.getElementById("selected-players").children.length;
+    const expenceElement = document.getElementById('p-Expenses');
+    const expenceElementString = expenceElement.innerText;
+    const expenceElementInt = parseInt(expenceElementString);
+    // console.log(typeof expenceElementInt, expenceElementInt);
+    const totalExpenses = perPayerCost * countPlayer;
+    console.log(typeof totalExpenses, totalExpenses)
+    expenceElement.innerText = totalExpenses;
 
-function setPlayerNameById(selectedPlayer, playerName, btn) {
-    const ol = document.getElementById(selectedPlayer)
-    const li = document.createElement("li");
-    const playerNameElement = document.getElementById(playerName);
-    li.innerText = playerNameElement.innerText;
-    ol.appendChild(li);
-    console.log(ol)
-    document.getElementById(btn).disabled = true;
-    document.getElementById(btn).style.backgroundColor = '#A2A9AF';
 
+});
+document.getElementById('btn-totalCalculation').addEventListener('click', function () {
+    const managerPrice = getInputElementById('managerCost');
+    const coachPrice = getInputElementById('coachCost');
+
+});
+
+function getInputElementById(price) {
+    const inputElement = document.getElementById(price);
+    const inputElementString = inputElement.value;
+    const inputElementInt = parseInt(inputElementString);
+    console.log(inputElementInt);
+    return inputElementInt;
 };
+
+
+
+
+
+
