@@ -92,6 +92,7 @@ img {
 .selected-players {
     background-color: black;
     color: white;
+    padding: 30px;
 }
 
 .selected-players h1 {
@@ -114,6 +115,12 @@ img {
 
 .plyer-images {
     width: 100%;
+}
+
+.display-line {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 0px;
 }
 
 .plyer-text {
