@@ -1,49 +1,111 @@
 document.getElementById('btn-player1').addEventListener('click', function () {
-    setPlayerNameById('selected-players', 'player-name1', 'btn-player1')
+    const players = playerNumberCheck();
+    if (players <= 4) {
+        setPlayerNameById('selected-players', 'player-name1', 'btn-player1')
+    }
+    else {
+        alert("You can Choose Only Five Players ");
+    }
 });
 document.getElementById('btn-player2').addEventListener('click', function () {
-    setPlayerNameById('selected-players', 'player-name2', 'btn-player2')
-
+    const players = playerNumberCheck();
+    if (players <= 4) {
+        setPlayerNameById('selected-players', 'player-name2', 'btn-player2')
+    }
+    else {
+        alert("You can Choose Only Five Players ");
+    }
 });
 document.getElementById('btn-player3').addEventListener('click', function () {
-    setPlayerNameById('selected-players', 'player-name3', 'btn-player3')
-
+    const players = playerNumberCheck();
+    if (players <= 4) {
+        setPlayerNameById('selected-players', 'player-name3', 'btn-player3')
+    }
+    else {
+        alert("You can Choose Only Five Players ");
+    }
 });
 document.getElementById('btn-player4').addEventListener('click', function () {
-    setPlayerNameById('selected-players', 'player-name4', 'btn-player4')
-
+    const players = playerNumberCheck();
+    if (players <= 4) {
+        setPlayerNameById('selected-players', 'player-name4', 'btn-player4')
+    }
+    else {
+        alert("You can Choose Only Five Players ");
+    }
 });
 document.getElementById('btn-player5').addEventListener('click', function () {
-    setPlayerNameById('selected-players', 'player-name5', 'btn-player5')
+    const players = playerNumberCheck();
+    if (players <= 4) {
+        setPlayerNameById('selected-players', 'player-name5', 'btn-player5')
+    }
+    else {
+        alert("You can Choose Only Five Players ");
+    }
 
 });
 document.getElementById('btn-player6').addEventListener('click', function () {
-    setPlayerNameById('selected-players', 'player-name6', 'btn-player6')
-
+    const players = playerNumberCheck();
+    if (players <= 4) {
+        setPlayerNameById('selected-players', 'player-name6', 'btn-player6')
+    }
+    else {
+        alert("You can Choose Only Five Players ");
+    }
 });
 document.getElementById('btn-player7').addEventListener('click', function () {
-    setPlayerNameById('selected-players', 'player-name7', 'btn-player7')
-
+    const players = playerNumberCheck();
+    if (players <= 4) {
+        setPlayerNameById('selected-players', 'player-name7', 'btn-player7')
+    }
+    else {
+        alert("You can Choose Only Five Players ");
+    }
 });
 document.getElementById('btn-player8').addEventListener('click', function () {
-    setPlayerNameById('selected-players', 'player-name8', 'btn-player8')
-
+    const players = playerNumberCheck();
+    if (players <= 4) {
+        setPlayerNameById('selected-players', 'player-name8', 'btn-player8')
+    }
+    else {
+        alert("You can Choose Only Five Players ");
+    }
 });
 document.getElementById('btn-player9').addEventListener('click', function () {
-    setPlayerNameById('selected-players', 'player-name9', 'btn-player9')
-
+    const players = playerNumberCheck();
+    if (players <= 4) {
+        setPlayerNameById('selected-players', 'player-name9', 'btn-player9')
+    }
+    else {
+        alert("You can Choose Only Five Players ");
+    }
 });
 document.getElementById('btn-player10').addEventListener('click', function () {
-    setPlayerNameById('selected-players', 'player-name10', 'btn-player10')
-
+    const players = playerNumberCheck();
+    if (players <= 4) {
+        setPlayerNameById('selected-players', 'player-name10', 'btn-player10')
+    }
+    else {
+        alert("You can Choose Only Five Players ");
+    }
 });
 document.getElementById('btn-player11').addEventListener('click', function () {
-    setPlayerNameById('selected-players', 'player-name11', 'btn-player11')
-
+    const players = playerNumberCheck();
+    if (players <= 4) {
+        setPlayerNameById('selected-players', 'player-name11', 'btn-player11')
+    }
+    else {
+        alert("You can Choose Only Five Players ");
+    }
 });
 document.getElementById('btn-player12').addEventListener('click', function () {
-    setPlayerNameById('selected-players', 'player-name12', 'btn-player12')
-
+    const players = playerNumberCheck();
+    if (players <= 4) {
+        setPlayerNameById('selected-players', 'player-name12', 'btn-player12')
+    }
+    else {
+        alert('You can Choose Only Five Players');
+    }
 });
 document.getElementById('btn-calculation').addEventListener('click', function () {
     const perPayerCost = getInputElementById('playerCost');
@@ -56,6 +118,10 @@ document.getElementById('btn-calculation').addEventListener('click', function ()
 
 
 });
+function playerNumberCheck() {
+    let countPlayer = document.getElementById("selected-players").children.length;
+    return countPlayer;
+}
 document.getElementById('btn-totalCalculation').addEventListener('click', function () {
     const managerPrice = getInputElementById('managerCost');
     const coachPrice = getInputElementById('coachCost');
